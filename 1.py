@@ -1,9 +1,5 @@
-a=input("enter==")
-i=0
-while i<len(a):
-  b=(a[-1::-1])
-  i=i+1
-if a==b:
-  print("palidrome")
-else:
-  print("not palidrome")
+words = 'His e-mail is q-lar@freecodecamp.org'
+pieces = words.split()
+parts = pieces[3].split('-')
+n = parts[1]
+print(n)

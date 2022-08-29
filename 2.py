@@ -1,10 +1,11 @@
-a=int(input("enter the number="))
-i=0
-while i<a:
-  b=a%10
-  b=b//10
-  i=i+1
-if a==b:
-  print("palidrome")
-else:
-  print("not palidrome")
+num=int(input("enter the number"))
+num1=int(input("enter the number"))
+while num<=num1:
+    i=1
+    while i<=10:
+        if num%2!=0:
+            b=i*num
+            print(b)
+        i=i+1
+    num=num+1
+
