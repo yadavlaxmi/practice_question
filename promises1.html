@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Promise</title>
+    </head>
+    <body>
+        <script>
+            function prom(complete){
+                 return new Promise(function(resolve,reject){
+                    console.log("Fetching data,please wait")
+                if (complete){
+                    resolve("I am succesful");
+                }
+                else{
+                    reject("I am fail")
+                }
+            });
+            }
+            let onfulfilled =(result)=>{
+                console.log(result);
+            }
+            let onrejection=(error)=>{
+                console.log(error);
+            }
+            prom(true).then(onfulfilled);
+            prom(False).then(onrejection);
+        console.log(prom(false))
+        </script>
+    </body>
+</html>

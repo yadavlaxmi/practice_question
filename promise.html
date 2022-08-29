@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Promise</title>
+    </head>
+    <body>
+        <script>
+            let complete="True";
+            let prom=new Promise(function(resolve,reject){
+                if (complete){
+                    resolve("I am succesful");
+                }
+                else{
+                    reject("I am fail")
+                }
+            });
+        console.log(prom)
+        </script>
+    </body>
+</html>
